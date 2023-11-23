@@ -1,0 +1,110 @@
+@font-face {
+  font-family: "nimbus";
+  src: url("./fonts/nimbus.woff2") format("woff2"),
+    url("./fonts/nimbus.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body,
+html {
+  margin: 0;
+  font-family: "nimbus", sans-serif;
+}
+
+* {
+  font-size: 20px;
+}
+
+input,
+textarea {
+  font-family: "nimbus", sans-serif;
+}
+
+main {
+  display: grid;
+  grid-template-columns: 250px 1fr;
+  width: 100%;
+  height: 100vh;
+}
+
+#ui {
+  padding: 15px;
+}
+
+#sketch {
+  background: #ffffff;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+}
+
+canvas {
+  width: 100%;
+}
+
+textarea {
+  width: 100%;
+}
+
+textarea {
+  resize: none;
+}
+
+input,
+textarea,
+button {
+  outline: none;
+  border: 0;
+}
+
+input,
+textarea {
+  padding: 5px;
+  border: 1px solid black;
+  background: #ffffff;
+}
+
+button {
+}
+
+.btn {
+  padding: 10px 20px;
+}
+
+#btnSave {
+  background: #00ff00;
+  cursor: pointer;
+  color: black;
+  width: 100%;
+  padding: 20px;
+}
+
+#btnSave:hover {
+  background: black;
+  color: white;
+}
+
+::-moz-color-swatch {
+  border-color: transparent;
+}
+
+#FOREGROUND,
+#BACKGROUND {
+  border: 1px solid black;
+  overflow: hidden;
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+  margin: 10px 0 20px 0;
+}
+
+#txtSize {
+  width: 100%;
+}
