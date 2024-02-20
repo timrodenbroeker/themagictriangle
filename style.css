@@ -34,11 +34,11 @@ main {
 
 #ui {
   padding: 15px;
-  background: #f1f1f1;
+
 }
 
 #sketch {
-  background: #f1f1f1;
+
   height: 100vh;
   display: flex;
   justify-content: center;
@@ -69,7 +69,7 @@ input,
 textarea {
   padding: 5px;
   border: 1px solid black;
-  background: #f1f1f1;
+
 }
 
 button {

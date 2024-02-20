@@ -6,7 +6,7 @@ function preload() {
 }
 
 function setup() {
-  var canvas = createCanvas(800, 800);
+  var canvas = createCanvas(1200, 800);
   canvas.parent("sketch");
   rectMode(CENTER);
 }
@@ -35,13 +35,14 @@ function draw() {
   textFont(font);
   textAlign(CENTER, CENTER);
 
-  var lineHeight = 45;
+  var lineHeight = txtSize;
 
   textSize(txtSize);
   textLeading(lineHeight);
 
   noStroke();
   fill(FOREGROUND);
+  
 
   // project title
   push();
@@ -49,7 +50,7 @@ function draw() {
 
   push();
   translate(width / 2, height * 0.6);
-  text(title.toUpperCase(), 0, 0);
+  text(title, 0, 0);
   pop();
 
   var offsetX = width * 0.22;
@@ -79,7 +80,7 @@ function draw() {
   push();
   textAlign(CENTER, TOP);
   push();
-  translate(width / 2, height / 2 + 220);
+  translate(width / 2, height / 2 + height*0.4);
   text(rule3, 0, 0);
   pop();
 
@@ -94,7 +95,7 @@ function draw() {
   pop();
 
   if (saveImageBool == true) {
-    save("magic_triangle_" + title + ".png");
+    save("magic-triangle-" + title + ".png");
     saveImageBool = false;
   }
 }
